@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U.S. Tourism Trends 2024-2025: How the Holiday Season Unfolded</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header nav -->
+    <header>
+      <div class="logo">
+        <img src="./assets/image.png" alt="Travelo">
+        <span>Travelo</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#discover">Discover</a></li>
+          <li><a href="#trends">Trends</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn-login">Log In</button>
+          <button class="btn-signup">Sign Up</button>
+        </div>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>U.S. Tourism Trends</h1>
+        <h1>2024-2025</h1>
+        <p>Explore how tourism patterns evolved across major American cities during the holiday season from Thanksgiving to New Year.</p>
+        <button class="btn-primary" id="start-journey">Start Exploring</button>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to discover</span>
+        <div class="arrow-down"></div>
+      </div>
+    </section>
+
+    <!-- Single map that serves as both background and interactive map -->
+    <div class="map-container" id="map-container">
+    </div>
+
+    <!-- Vertical timeline on right edge -->
+    <div class="vertical-timeline">
+      <div class="timeline-progress"></div>
+      <div class="timeline-item" data-month="11" data-year="2024">
+        <div class="timeline-marker active" data-month="11" data-year="2024"></div>
+        <div class="timeline-label">November 2024</div>
+      </div>
+      <div class="timeline-item" data-month="12" data-year="2024">
+        <div class="timeline-marker" data-month="12" data-year="2024"></div>
+        <div class="timeline-label">December 2024</div>
+      </div>
+      <div class="timeline-item" data-month="01" data-year="2025">
+        <div class="timeline-marker" data-month="01" data-year="2025"></div>
+        <div class="timeline-label">January 2025</div>
+      </div>
+    </div>
+
+    <!-- Main story -->
+    <section class="story-container">
+      <div class="sticky-container">
+      </div>
+
+      <!-- Story sections -->
+      <div class="story-sections">
+        <!-- Thanksgiving -->
+        <div class="story-section" id="thanksgiving-prep" data-step="thanksgiving-prep" data-month="11" data-year="2024">
+          <div class="content-wrapper">
+            <h2>Before Thanksgiving: Travel Planning</h2>
+            <p>In early November 2024, Americans began making travel arrangements for the Thanksgiving holiday, marking the beginning of the busiest travel season of the year. </p>
+            <p>Major urban destinations saw increasing reservation rates, with families planning both hometown returns and holiday getaways. </p>
+            <ul class="trend-list">
+              <li>New York City emerged as the top destination for international visitors</li>
+              <li>Domestic travelers primarily booked flights to their hometowns</li>
+              <li>Average hotel bookings increased from 2.5 to 3.2 nights</li>
+              <li>Business travel peaked in the week before Thanksgiving</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- New York Thanksgiving -->
+        <div class="story-section" id="nyc-thanksgiving" data-step="nyc-thanksgiving" data-month="11" data-year="2024">
+          <div class="content-wrapper">
+            <h2>New York: International Hub</h2>
+            <p>New York City welcomed over 850,000 tourists during Thanksgiving week, with international visitors accounting for nearly 30% of arrivals. </p>
+            <p>Hotels reported 92% occupancy rates, and Broadway shows saw sold-out performances. The city's tourism revenue reached $1.2 billion for November—a record figure that highlighted New York's enduring appeal as a holiday destination.</p>
+            <p>Restaurant bookings in the city surged 65% above normal levels. </p>
+          </div>
+        </div>
+
+        <!-- Thanksgiving peak -->
+        <div class="story-section" id="thanksgiving-peak" data-step="thanksgiving-peak" data-month="11" data-year="2024">
+          <div class="content-wrapper">
+            <h2>Las Vegas: Entertainment Surge</h2>
+            <p>The weekend following Thanksgiving transformed Las Vegas into an entertainment hotspot, drawing 780,000 visitors seeking extended holiday celebrations. Casino resorts reported 95% occupancy, with visitors spending an average of 3.5 days in the city—significantly longer than the typical weekend stay.</p>
+            <p>Tourist spending reached $980 million, concentrated in entertainment, dining, and gaming. Special holiday show packages and post-Thanksgiving deals successfully attracted visitors looking to extend their holiday break.</p>
+          </div>
+        </div>
+
+        <!-- Christmas -->
+        <div class="story-section" id="christmas-travel" data-step="christmas-travel" data-month="12" data-year="2024">
+          <div class="content-wrapper">
+            <h2>Chicago: Winter Wonderland</h2>
+            <p>As December arrived, Chicago became a premier winter tourism destination, attracting 450,000 visitors drawn to its Christkindlmarket, ice skating at Millennium Park, and festive light displays. The city's particular appeal was its authentic winter atmosphere, with tourism officials reporting that 62% of visitors specifically cited "winter ambiance" as their reason for choosing Chicago.</p>
+            <p>Despite occasional weather disruptions, air travel to Chicago exceeded pre-pandemic levels by 8%, demonstrating strong consumer confidence. Hotel revenue reached $580 million for December, with an average visitor satisfaction rating of 4.1/5.0.</p>
+          </div>
+        </div>
+
+        <!-- January -->
+        <div class="story-section" id="january-patterns" data-step="january-patterns" data-month="01" data-year="2025">
+          <div class="content-wrapper">
+            <h2>Washington D.C.: Unexpected Rise</h2>
+            <p>January 2025 revealed surprising tourism patterns in Washington D.C., which saw 420,000 visitors—a 31% increase over January 2024. This unexpected surge was driven by extended holiday exhibitions at the Smithsonian museums and special events at national monuments.</p>
+            <p>Business travel resumed earlier than in previous years, with hotels reporting 76% occupancy by the second week of January—historically a slow period. Tourism revenue reached $580 million, with visitor satisfaction scores averaging an impressive 4.4/5.0.</p>
+          </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="story-section" id="conclusion" data-step="conclusion" data-month="01" data-year="2025">
+          <div class="content-wrapper">
+            <h2>Tourism Evolution: Insights for 2025</h2>
+            <p>The 2024-2025 holiday season marked a significant evolution in American tourism patterns. Total tourism revenue across major cities increased 18% compared to the previous year, demonstrating robust recovery and growth despite economic uncertainties.</p>
+            <p>Three key trends emerged: longer average stays (3.1 days vs. 2.4 in 2023-2024), increased international visitors (up 23%), and the rise of "experience-based" tourism over traditional sightseeing. Cities that invested in unique seasonal experiences saw the greatest visitor growth.</p>
+            <p>Looking ahead, industry forecasts suggest continued growth in both domestic and international tourism through 2025, with technology and sustainability emerging as key factors shaping travel choices. Tourism officials are now focusing on enhancing digital experiences and promoting sustainable practices to attract the increasingly eco-conscious traveler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- City detail -->
+    <div class="city-detail-modal" id="city-detail-modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <div class="city-detail-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script references -->
+  <script src="js/data.js" type="module"></script>
+  <script src="js/map.js" type="module"></script>
+  <script src="js/timeline.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "11-2024": [
+    {"city_id": "nyc", "city_name": "New York City", "visitors": 850000, "revenue": 1200000000, "satisfaction": 4.3, "avg_stay": 3.2},
+    {"city_id": "dc", "city_name": "Washington D.C.", "visitors": 320000, "revenue": 450000000, "satisfaction": 4.5, "avg_stay": 2.7},
+    {"city_id": "lasvegas", "city_name": "Las Vegas", "visitors": 780000, "revenue": 980000000, "satisfaction": 4.1, "avg_stay": 3.5},
+    {"city_id": "chicago", "city_name": "Chicago", "visitors": 410000, "revenue": 520000000, "satisfaction": 4.0, "avg_stay": 2.3},
+    {"city_id": "boston", "city_name": "Boston", "visitors": 290000, "revenue": 380000000, "satisfaction": 4.4, "avg_stay": 2.5},
+    {"city_id": "miami", "city_name": "Miami", "visitors": 560000, "revenue": 780000000, "satisfaction": 4.6, "avg_stay": 4.0},
+    {"city_id": "sanfrancisco", "city_name": "San Francisco", "visitors": 480000, "revenue": 720000000, "satisfaction": 4.2, "avg_stay": 3.1},
+    {"city_id": "orlando", "city_name": "Orlando", "visitors": 640000, "revenue": 890000000, "satisfaction": 4.5, "avg_stay": 4.3},
+    {"city_id": "neworleans", "city_name": "New Orleans", "visitors": 270000, "revenue": 420000000, "satisfaction": 4.7, "avg_stay": 3.6},
+    {"city_id": "seattle", "city_name": "Seattle", "visitors": 310000, "revenue": 460000000, "satisfaction": 4.2, "avg_stay": 2.8}
+  ],
+  "12-2024": [
+    {"city_id": "nyc", "city_name": "New York City", "visitors": 1200000, "revenue": 1850000000, "satisfaction": 4.5, "avg_stay": 3.5},
+    {"city_id": "dc", "city_name": "Washington D.C.", "visitors": 380000, "revenue": 520000000, "satisfaction": 4.3, "avg_stay": 2.9},
+    {"city_id": "lasvegas", "city_name": "Las Vegas", "visitors": 950000, "revenue": 1350000000, "satisfaction": 4.4, "avg_stay": 3.8},
+    {"city_id": "chicago", "city_name": "Chicago", "visitors": 450000, "revenue": 580000000, "satisfaction": 4.1, "avg_stay": 2.5},
+    {"city_id": "boston", "city_name": "Boston", "visitors": 320000, "revenue": 420000000, "satisfaction": 4.2, "avg_stay": 2.6},
+    {"city_id": "miami", "city_name": "Miami", "visitors": 720000, "revenue": 980000000, "satisfaction": 4.7, "avg_stay": 4.5},
+    {"city_id": "sanfrancisco", "city_name": "San Francisco", "visitors": 420000, "revenue": 650000000, "satisfaction": 4.0, "avg_stay": 2.9},
+    {"city_id": "orlando", "city_name": "Orlando", "visitors": 870000, "revenue": 1250000000, "satisfaction": 4.6, "avg_stay": 4.8},
+    {"city_id": "neworleans", "city_name": "New Orleans", "visitors": 390000, "revenue": 580000000, "satisfaction": 4.8, "avg_stay": 4.0},
+    {"city_id": "seattle", "city_name": "Seattle", "visitors": 280000, "revenue": 410000000, "satisfaction": 4.0, "avg_stay": 2.5}
+  ],
+  "01-2025": [
+    {"city_id": "nyc", "city_name": "New York City", "visitors": 720000, "revenue": 980000000, "satisfaction": 4.2, "avg_stay": 3.0},
+    {"city_id": "dc", "city_name": "Washington D.C.", "visitors": 420000, "revenue": 580000000, "satisfaction": 4.4, "avg_stay": 3.1},
+    {"city_id": "lasvegas", "city_name": "Las Vegas", "visitors": 820000, "revenue": 1150000000, "satisfaction": 4.3, "avg_stay": 3.6},
+    {"city_id": "chicago", "city_name": "Chicago", "visitors": 280000, "revenue": 350000000, "satisfaction": 3.9, "avg_stay": 2.2},
+    {"city_id": "boston", "city_name": "Boston", "visitors": 230000, "revenue": 310000000, "satisfaction": 4.0, "avg_stay": 2.4},
+    {"city_id": "miami", "city_name": "Miami", "visitors": 840000, "revenue": 1180000000, "satisfaction": 4.8, "avg_stay": 4.7},
+    {"city_id": "sanfrancisco", "city_name": "San Francisco", "visitors": 390000, "revenue": 590000000, "satisfaction": 4.1, "avg_stay": 2.8},
+    {"city_id": "orlando", "city_name": "Orlando", "visitors": 680000, "revenue": 920000000, "satisfaction": 4.5, "avg_stay": 4.2},
+    {"city_id": "neworleans", "city_name": "New Orleans", "visitors": 310000, "revenue": 470000000, "satisfaction": 4.6, "avg_stay": 3.4},
+    {"city_id": "seattle", "city_name": "Seattle", "visitors": 240000, "revenue": 340000000, "satisfaction": 3.8, "avg_stay": 2.3}
+  ]
+}
