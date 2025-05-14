@@ -96,6 +96,7 @@ us-tourism-trends/
 │   └── Screenshot3.png     # Project screenshot 3
 └── README.md               # Project documentation
 
+```
 ---
 
 ## 📸 Screenshot Highlights
