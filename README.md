@@ -74,24 +74,27 @@ Inspired by **New York Times' "How the Virus Won"** visualization, this project 
 
 ## 📂 Project Structure
 
+## 📁 Project Structure
+
+```text
 us-tourism-trends/
 ├── css/
-│ └── styles.css # Main stylesheet with advanced visual styling
+│   └── styles.css          # Main stylesheet with advanced visual styling
 ├── js/
-│ ├── imap.js # Enhanced map visualization with curved flows
-│ ├── main.js # Main application logic with animations
-│ ├── timeline.js # Timeline navigation component
-│ └── data.js # Tourism data handling
+│   ├── imap.js             # Enhanced map visualization with curved flows
+│   ├── main.js             # Main application logic with animations
+│   ├── timeline.js         # Timeline navigation component
+│   └── data.js             # Tourism data handling
 ├── data/
-│ ├── tourism.json # Tourism statistics and metrics
-│ └── world.json # GeoJSON data for map boundaries
-├── index.html # Main HTML structure with scrollytelling
+│   ├── tourism.json        # Tourism statistics and metrics
+│   └── world.json          # GeoJSON data for map boundaries
+├── index.html              # Main HTML structure with scrollytelling
 ├── assets/
-│ ├── image.png # Logo
-│ ├── Screenshot1.png # Project screenshot 1
-│ ├── Screenshot2.png # Project screenshot 2
-│ └── Screenshot3.png # Project screenshot 3
-└── README.md # Project documentation
+│   ├── image.png           # Logo
+│   ├── Screenshot1.png     # Project screenshot 1
+│   ├── Screenshot2.png     # Project screenshot 2
+│   └── Screenshot3.png     # Project screenshot 3
+└── README.md               # Project documentation
 
 ---
 
